@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+  padding-top: 5em;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.monthHeader {
+  text-align: center;
+}
+
+.month {
+  display: inline;
+  margin: .5rem;
+}
+
+.weekdays, .listDays {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.weekdays li, .listDays li {
+  width: calc( 100% / 7 );
+  outline: 1px solid rgba(158, 158, 158, 20%);
+  text-align: center;
+}
